@@ -10,10 +10,10 @@ from watson_developer_cloud import PersonalityInsightsV2 as PersonalityInsights,
 alchemy_language = AlchemyLanguageV1(api_key = 'API_KEY')
 
 # Twitter API Credentials
-twitter_consumer_key = 'CONSUMER_KEY'
-twitter_consumer_secret = 'CONSUMER_SECRET'
-twitter_access_token = 'ACCESS_TOKEN'
-twitter_access_secret = 'ACCESS_SECRET'
+twitter_consumer_key = 'KEY'
+twitter_consumer_secret = 'SECRET'
+twitter_access_token = 'TOKEN'
+twitter_access_secret = 'SECRET'
 
 twitter_api = twitter.Api(consumer_key = twitter_consumer_key, consumer_secret = twitter_consumer_secret, access_token_key = twitter_access_token, access_token_secret = twitter_access_secret)
 
@@ -55,11 +55,11 @@ class User(object):
 # Create User
 #user_one = User('NAME')
 
-accounts_list = ['accountOne', 'accountTwo', 'adNauseum']
+accounts_list = ['ONE', 'TWO', 'THREE']
 
 def sentiment_and_emotion(lst):
     for l in lst:
         l = User(l)
-        return l.sentiment_values(), l.emotion_values()
+        print(l.sentiment_values(), l.emotion_values())
 
-print sentiment_and_emotion(accounts_list)
+print(sentiment_and_emotion(accounts_list))
