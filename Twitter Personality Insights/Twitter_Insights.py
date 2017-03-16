@@ -60,7 +60,7 @@ class User(object):
         return sentiment_dict
     
 # Define a list of twitter accounts for analysis
-accounts_list = ['willkennard']
+accounts_list = ['One', 'Two', 'Three']
 
 # This method is a cost-saving exercise. Rather than submitting each handle's content, it combines all of the handles' content into one behemoth string which is then sent to Watson. It will only save fractions of a penny for individual searches, but it'll be far more cost effective when running hundreds of accounts through. There is clearly room for improvement.
 # Note that Watson only accepts up to 20mb inputs
